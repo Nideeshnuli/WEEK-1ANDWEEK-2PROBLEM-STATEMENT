@@ -5,7 +5,7 @@ public class SocialMediaUsernameAvailabilityChecker {
     HashMap<String, Integer> users = new HashMap<>();
     HashMap<String, Integer> attempts = new HashMap<>();
 
-    public SocialMediaUsernameAvailabilityChecker () {
+    public SocialMediaUsernameAvailabilityChecker() {
         users.put("john_doe", 101);
         users.put("alex", 102);
         users.put("admin", 1);
@@ -56,7 +56,7 @@ public class SocialMediaUsernameAvailabilityChecker {
 
     public static void main(String[] args) {
 
-        SocialMediaUsernameAvailabilityChecker  checker = new SocialMediaUsernameAvailabilityChecker ();
+        SocialMediaUsernameAvailabilityChecker checker = new SocialMediaUsernameAvailabilityChecker();
 
         System.out.println(checker.checkAvailability("john_doe"));
         System.out.println(checker.checkAvailability("jane_smith"));
@@ -66,5 +66,3 @@ public class SocialMediaUsernameAvailabilityChecker {
         System.out.println(checker.getMostAttempted());
     }
 }
-
-
